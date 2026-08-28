@@ -1,4 +1,4 @@
-import groupImage from "/src/assets/kukisa-group.jpg";
+import groupImage from "../assets/kukisa-group.jpg";
 
 function Hero() {
   const scrollToRegistration = () => {
@@ -20,7 +20,7 @@ function Hero() {
         <p className="welcome-text">WELCOME TO</p>
 
         <h2 className="hero-title">
-          KUKI<span>SA</span>
+          KUKISA
         </h2>
 
         <h3>Your Home Away From Home<br />at Kenyatta University.</h3>
