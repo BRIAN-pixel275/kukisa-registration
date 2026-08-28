@@ -1,4 +1,4 @@
-import groupImage from "/src/assets/kukisa-group.jpg";
+import groupImage from ".../assets/kukisa-group.jpg";
 
 function Hero() {
   const scrollToRegistration = () => {
