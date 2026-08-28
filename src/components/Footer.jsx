@@ -22,7 +22,7 @@ function Footer() {
 
         <div className="social-links">
           <a
-            href="#"
+            href="https://www.instagram.com/kukisa_ku?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw=="
             className="social-link"
             aria-label="Instagram"
             target="_blank"
@@ -32,7 +32,7 @@ function Footer() {
           </a>
 
           <a
-            href="#"
+            href="https://www.facebook.com/kukisa.ku"
             className="social-link"
             aria-label="Facebook"
             target="_blank"
@@ -42,7 +42,7 @@ function Footer() {
           </a>
 
           <a
-            href="#"
+            href="https://www.tiktok.com/@kukisa_ku?is_from_webapp=1&sender_device=pc"
             className="social-link"
             aria-label="TikTok"
             target="_blank"
@@ -52,7 +52,7 @@ function Footer() {
           </a>
 
           <a
-            href="#"
+            href="https://chat.whatsapp.com/CJefRr1zzKMKz7uagvjjiO"
             className="social-link"
             aria-label="WhatsApp"
             target="_blank"
@@ -62,7 +62,7 @@ function Footer() {
           </a>
 
           <a
-            href="mailto:yourkukisaemail@gmail.com"
+            href="mailto:kukisa.ku.association@gmail.com"
             className="social-link"
             aria-label="Email"
           >
