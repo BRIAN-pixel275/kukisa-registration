@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
 :root {
   --primary-blue: #245b7a;
   --dark-blue: #173f5f;
   --soft-blue: #eaf2f6;
-  --yellow: #f4c95d;
+  --yellow: #ebb834;
 
   --white: #ffffff;
   --text-dark: #263746;
@@ -27,7 +27,7 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   background: var(--light-bg);
   color: var(--text-dark);
 }
@@ -68,7 +68,7 @@ button {
 
 .header-brand h1 {
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1;
 }
 
@@ -87,7 +87,7 @@ button {
   border-radius: 8px;
 
   font-size: 0.7rem;
-  font-weight: 800;
+  font-weight: 700;
 
   transition: 0.25s ease;
 }
@@ -151,10 +151,10 @@ button {
 }
 
 .hero-title {
-  font-size: clamp(4rem, 17vw, 7rem);
-  line-height: 0.9;
-  font-weight: 900;
-  letter-spacing: -4px;
+  font-size: clamp(3.8rem, 16vw, 6.5rem);
+  line-height: 0.95;
+  font-weight: 700;
+  letter-spacing: -2px;
 }
 
 .hero-title span {
