@@ -7,6 +7,7 @@ import {
   GraduationCap,
   BookOpen,
   Building2,
+  CreditCard,
   MapPin,
   Map,
   Home,
@@ -20,6 +21,7 @@ function RegistrationForm() {
     fullName: "",
     phone: "",
     email: "",
+    nationalId: "",
     registrationNumber: "",
     course: "",
     faculty: "",
@@ -59,6 +61,7 @@ function RegistrationForm() {
         full_name: formData.fullName,
         phone: formData.phone,
         email: formData.email || null,
+        national_id: formData.nationalId,
         registration_number: formData.registrationNumber,
         course: formData.course,
         faculty: formData.faculty,
@@ -94,6 +97,7 @@ function RegistrationForm() {
       fullName: "",
       phone: "",
       email: "",
+      nationalId: "",
       registrationNumber: "",
       course: "",
       faculty: "",
@@ -221,6 +225,24 @@ function RegistrationForm() {
                   placeholder="example@email.com"
                   value={formData.email}
                   onChange={handleChange}
+                />
+              </div>
+            </div>
+
+            <div className="input-group full-width">
+              <label>National ID Number *</label>
+
+              <div className="input-wrapper">
+                <CreditCard size={18} />
+
+                <input
+                  type="text"
+                  name="nationalId"
+                  placeholder="Enter your national ID number"
+                  value={formData.nationalId}
+                  onChange={handleChange}
+                  inputMode="numeric"
+                  required
                 />
               </div>
             </div>

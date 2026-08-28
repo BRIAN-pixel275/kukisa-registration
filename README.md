@@ -36,6 +36,7 @@ The platform collects the following information:
 - Full Name
 - Phone Number
 - Email Address
+- National ID Number
 
 ### Academic Information
 - Registration Number
