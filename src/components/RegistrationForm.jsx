@@ -12,6 +12,7 @@ import {
   Home,
   Megaphone,
   LockKeyhole,
+  CheckCircle2,
 } from "lucide-react";
 
 function RegistrationForm() {
@@ -32,6 +33,7 @@ function RegistrationForm() {
   });
 
   const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -52,25 +54,23 @@ function RegistrationForm() {
 
     setLoading(true);
 
-    const { error } = await supabase
-      .from("registrations")
-      .insert([
-        {
-          full_name: formData.fullName,
-          phone: formData.phone,
-          email: formData.email || null,
-          registration_number: formData.registrationNumber,
-          course: formData.course,
-          faculty: formData.faculty,
-          year_of_study: formData.yearOfStudy,
-          constituency: formData.constituency,
-          sub_county: formData.subCounty,
-          ward: formData.ward || null,
-          residence: formData.residence || null,
-          referral: formData.referral || null,
-          consent: formData.consent,
-        },
-      ]);
+    const { error } = await supabase.from("registrations").insert([
+      {
+        full_name: formData.fullName,
+        phone: formData.phone,
+        email: formData.email || null,
+        registration_number: formData.registrationNumber,
+        course: formData.course,
+        faculty: formData.faculty,
+        year_of_study: formData.yearOfStudy,
+        constituency: formData.constituency,
+        sub_county: formData.subCounty,
+        ward: formData.ward || null,
+        residence: formData.residence || null,
+        referral: formData.referral || null,
+        consent: formData.consent,
+      },
+    ]);
 
     setLoading(false);
 
@@ -90,10 +90,6 @@ function RegistrationForm() {
       return;
     }
 
-    alert(
-      "Welcome to KUKISA! 🎉 Your registration has been submitted successfully."
-    );
-
     setFormData({
       fullName: "",
       phone: "",
@@ -109,7 +105,54 @@ function RegistrationForm() {
       referral: "",
       consent: false,
     });
+
+    setSuccess(true);
   };
+
+  const handleBackToTop = () => {
+    setSuccess(false);
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  if (success) {
+    return (
+      <section className="registration-section success-section" id="registration">
+        <div className="success-card">
+          <div className="success-icon">
+            <CheckCircle2 size={52} />
+          </div>
+
+          <p className="success-label">REGISTRATION SUCCESSFUL</p>
+
+          <h2>WELCOME TO KUKISA! 🎉</h2>
+
+          <p className="success-intro">
+            Your membership registration has been submitted successfully.
+          </p>
+
+          <p className="success-message">
+            Thank you for joining the Kenyatta University Kiambu Students
+            Association. We are excited to have you as part of the KUKISA
+            family!
+          </p>
+
+          <div className="success-divider"></div>
+
+          <p className="success-note">
+            Stay connected with us for upcoming activities, events and updates.
+          </p>
+
+          <button className="success-button" onClick={handleBackToTop}>
+            BACK TO KUKISA
+          </button>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className="registration-section" id="registration">
@@ -394,7 +437,6 @@ function RegistrationForm() {
           disabled={loading}
         >
           {loading ? "SUBMITTING..." : "SUBMIT REGISTRATION"}
-
           {!loading && <span>→</span>}
         </button>
 

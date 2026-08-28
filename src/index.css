@@ -644,3 +644,96 @@ button {
     grid-column: span 2;
   }
 }
+/* ================= SUCCESS STATE ================= */
+
+.success-section {
+  display: flex;
+  align-items: center;
+  min-height: 650px;
+}
+
+.success-card {
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 50px 25px;
+
+  background: white;
+  border-radius: 22px;
+  text-align: center;
+
+  box-shadow: 0 15px 40px rgba(20, 38, 75, 0.1);
+}
+
+.success-icon {
+  width: 88px;
+  height: 88px;
+  margin: 0 auto 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--yellow);
+  color: var(--dark-blue);
+  border-radius: 50%;
+}
+
+.success-label {
+  margin-bottom: 10px;
+  color: var(--primary-blue);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.success-card h2 {
+  color: var(--primary-blue);
+  font-size: 1.7rem;
+  margin-bottom: 16px;
+}
+
+.success-intro {
+  color: var(--text-dark);
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.success-message {
+  margin-top: 15px;
+  color: #667085;
+  line-height: 1.7;
+}
+
+.success-divider {
+  width: 60px;
+  height: 3px;
+  margin: 25px auto;
+  background: var(--yellow);
+  border-radius: 10px;
+}
+
+.success-note {
+  color: #667085;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.success-button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 16px;
+
+  background: var(--primary-blue);
+  color: white;
+
+  border-radius: 10px;
+
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.success-button:hover {
+  background: var(--dark-blue);
+}
