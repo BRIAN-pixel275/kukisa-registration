@@ -28,7 +28,7 @@ The submitted information is securely stored in Supabase, making it easier for t
 - 📲 Social media links in the footer
 - 🎨 KUKISA-inspired branding and colors
 
-## 🖼️ Registration Information Collected
+##  Registration Information Collected
 
 The platform collects the following information:
 
