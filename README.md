@@ -156,6 +156,7 @@ It provides the organization with a centralized way to collect and manage inform
 
 - GitHub: [@BRIAN-pixel275](https://github.com/BRIAN-pixel275)
 - LinkedIn: [Brian Muchiru](https://www.linkedin.com/in/brian-muchiru-b0b057356)
+- Portfolio: [Brian Muchiru](https://brianportfolio-eight.vercel.app/)
 
 ---
 
